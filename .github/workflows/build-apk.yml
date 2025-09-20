@@ -34,9 +34,11 @@ jobs:
         cmdline-tools-version: 8512546
         accept-android-sdk-licenses: true
     
-    - name: Install dependencies
-      working-directory: okul-app
-      run: npm install
+        - name: Install dependencies
+      run: |
+        cd okul-app
+        npm init -y
+        npm install
     
     - name: Install Cordova
       run: |
