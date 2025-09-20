@@ -28,11 +28,11 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
     
-    - name: Setup Android SDK
+  - name: Setup Android SDK
       uses: android-actions/setup-android@v3
       with:
-        api-level: 34
-        build-tools: 34.0.0
+        cmdline-tools-version: 8512546
+        accept-android-sdk-licenses: true
     
     - name: Install dependencies
       working-directory: okul-app
